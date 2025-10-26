@@ -1,8 +1,8 @@
 import { test, expect } from '@playwright/test';
-import * as products from '../pages/products'
-import * as cart from '../pages/cart';
-import * as checkout from '../pages/checkout'
-import * as contact from '../pages/contact'
+import * as products from './pages/products'
+import * as cart from './pages/cart';
+import * as checkout from './pages/checkout'
+import * as contact from './pages/contact'
 
 test('Item is added to the shopping cart', async ({ page }) => {
     await page.goto('/products');
